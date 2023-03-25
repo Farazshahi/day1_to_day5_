@@ -1,0 +1,479 @@
++*In[2]:*+
+[source, ipython3]
+----
+print("Hello World!")
+----
+
+
++*Out[2]:*+
+----
+Hello World!
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+Introduction to python programming:
+
+first we will start from VARIABLES
+What the variable is when we assign some values it can be integer float character
+----
+
+
++*In[4]:*+
+[source, ipython3]
+----
+x=5
+y=9
+z=x+y
+print(z)
+----
+
+
++*Out[4]:*+
+----
+14
+----
+
+
++*In[7]:*+
+[source, ipython3]
+----
+name1='faraz'
+name2='shahid'
+print(name1.title())
+
+----
+
+
++*Out[7]:*+
+----
+Faraz
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+introduction to f string
+general syntax of f string
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+f"custom words,{placeholder1}{placeholder2}....{placeholder}
+----
+
+
++*In[9]:*+
+[source, ipython3]
+----
+fullname=f"fullname of mine is, {name1} {name2}"
+print(fullname.title())
+----
+
+
++*Out[9]:*+
+----
+Fullname Of Mine Is, Faraz Shahid
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+#DATATYPES
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+In this we will study 5 datatypes 
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+1.Strings(str)--->it can be use in single double quote
+2.Numbers---->integer(int)it convert the number into a whole no.to integer it removes after decimal
+and float(float)-->float convert a string into floating(real no.)
+3.List-------->list(sequence of item)
+4.Tuples------->tuple
+5.Dictionaries------>dict
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+Classification of datatype:
+mutable--> which we can edit and alter====>flexible in nature
+immutable--> which we cannot edit==> not flexible or fixed in nature
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+name1='faraz'
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+name2="kritika"
+----
+
+
++*In[15]:*+
+[source, ipython3]
+----
+print((name1 + name2).title())
+----
+
+
++*Out[15]:*+
+----
+Farazshahid
+----
+
+
++*In[17]:*+
+[source, ipython3]
+----
+type(name2)
+----
+
+
++*Out[17]:*+
+----str----
+
+
++*In[19]:*+
+[source, ipython3]
+----
+print(name1.upper())
+----
+
+
++*Out[19]:*+
+----
+FARAZ
+----
+
+
++*In[20]:*+
+[source, ipython3]
+----
+print(name2.lower())
+----
+
+
++*Out[20]:*+
+----
+shahid
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+\n--->new line delimeter
+----
+
+
++*In[26]:*+
+[source, ipython3]
+----
+print("my favourite books are:\npython\nmaths\nc++\njava")
+----
+
+
++*Out[26]:*+
+----
+my favourite books are:
+python
+maths
+c++
+java
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+\t---->tab delimtere
+----
+
+
++*In[35]:*+
+[source, ipython3]
+----
+print("my favourite books are:\n\tpython\n\tmaths\n\tc++\n\tjava")
+----
+
+
++*Out[35]:*+
+----
+my favourite books are:
+	python
+	maths
+	c++
+	java
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+Removing white spaces in line
+----
+
+
++*In[38]:*+
+[source, ipython3]
+----
+name1='    faraz'
+print(name.title())
+----
+
+
++*Out[38]:*+
+----
+Faraz
+----
+
+
++*In[39]:*+
+[source, ipython3]
+----
+name2='faraz    '
+print(name.title())
+----
+
+
++*Out[39]:*+
+----
+Faraz    
+----
+
+
++*In[40]:*+
+[source, ipython3]
+----
+name3= '    faraz    '
+print(name.title())
+----
+
+
++*Out[40]:*+
+----
+    Faraz    
+----
+
+
++*In[43]:*+
+[source, ipython3]
+----
+name1.lstrip()
+----
+
+
++*Out[43]:*+
+----'faraz'----
+
+
++*In[44]:*+
+[source, ipython3]
+----
+name2.rstrip()
+----
+
+
++*Out[44]:*+
+----'shahid'----
+
+
++*In[51]:*+
+[source, ipython3]
+----
+name3= '    faraz    '
+name3.strip()
+----
+
+
++*Out[51]:*+
+----'faraz'----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+list--->list is a sequence of item declared in particular order
+classificaton is it is mutable 
+----
+
+
++*In[52]:*+
+[source, ipython3]
+----
+students=['faraz','kritika','aniket','harsh','kajal']
+print(students)
+----
+
+
++*Out[52]:*+
+----
+['faraz', 'kritika', 'aniket', 'harsh', 'kajal']
+----
+
+
++*In[54]:*+
+[source, ipython3]
+----
+type(students)
+----
+
+
++*Out[54]:*+
+----list----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+introduction to indexing--->0,1,2,3,4,5,6,
+----
+
+
++*In[55]:*+
+[source, ipython3]
+----
+print(students[0])
+----
+
+
++*Out[55]:*+
+----
+faraz
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+print(students[3].title())
+----
+
+
++*In[69]:*+
+[source, ipython3]
+----
+#using append we can add element
+students.append('rakesh')
+print(students)
+----
+
+
++*Out[69]:*+
+----
+['faraz', 'kritika', 'aniket', 'harsh', 'kajal', 'dilip', 'dilip', 'dilip', 'dilip', 'dilip', 'dilip', 'dilip', 'hji', 'hji', 'rakesh', 'rakesh']
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+how to add new element to the list
+how to modify element to the list
+how to delete element to the list
+----
+
+
++*In[76]:*+
+[source, ipython3]
+----
+x=students.pop(5)
+print(students)
+----
+
+
++*Out[76]:*+
+----
+['faraz', 'kritika', 'aniket', 'harsh', 'kajal', 'dilip', 'dilip', 'dilip', 'dilip', 'dilip', 'hji', 'hji', 'rakesh', 'rakesh']
+----
+
+
++*In[77]:*+
+[source, ipython3]
+----
+x=students.pop(6)
+print(students)
+----
+
+
++*Out[77]:*+
+----
+['faraz', 'kritika', 'aniket', 'harsh', 'kajal', 'dilip', 'dilip', 'dilip', 'dilip', 'hji', 'hji', 'rakesh', 'rakesh']
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+pop is use for deleting -->temporary
+----
+
+
++*In[78]:*+
+[source, ipython3]
+----
+print(x)
+----
+
+
++*Out[78]:*+
+----
+dilip
+----
+
+
++*In[85]:*+
+[source, ipython3]
+----
+students.insert(0,'monu')
+print(students)
+----
+
+
++*Out[85]:*+
+----
+['monu', 'faraz', 'kritika', 'aniket', 'harsh', 'kajal', 'dilip', 'dilip', 'dilip', 'dilip', 'hji', 'hji', 'rakesh', 'rakesh']
+----
+
+
++*In[87]:*+
+[source, ipython3]
+----
+students[0]='ankit'
+print(students)
+----
+
+
++*Out[87]:*+
+----
+['ankit', 'faraz', 'kritika', 'aniket', 'harsh', 'kajal', 'dilip', 'dilip', 'dilip', 'dilip', 'hji', 'hji', 'rakesh', 'rakesh']
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
